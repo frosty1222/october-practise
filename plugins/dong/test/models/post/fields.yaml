@@ -1,0 +1,27 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+
+tabs:
+    fields:
+        title:
+            label: Title
+            span: auto
+            type: text
+            tab: Post
+        content:
+            label: Content
+            span: full
+            type: textarea
+            tab: Post
+        author:
+            label: Author
+            type: relation
+            nameFrom: name
+            tab: Post
+        messages:
+            type: partial
+            path: messages
+            label: Message
+            tab: Messages

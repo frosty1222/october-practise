@@ -1,0 +1,14 @@
+<div class="blog-posts">
+{% partial __SELF__ ~ '::posts' %}
+  {% flash %}
+    <p
+        data-control="flash-message"
+        data-type="{{ type }}"
+        data-interval="5">
+        {{ message }}
+    </p>
+   {% endflash %}
+    <div class="col-md-5">
+           {% partial __SELF__ ~ '::form-post' %}
+    </div>
+</div>

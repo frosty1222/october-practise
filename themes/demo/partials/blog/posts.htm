@@ -1,0 +1,9 @@
+<div class="blog-posts">
+    {% for post in posts %}
+        <div class="blog-post">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content | raw }}</p>
+            <p><small>Published on {{ post.created_at | date('M d, Y') }}</small></p>
+        </div>
+    {% endfor %}
+</div>

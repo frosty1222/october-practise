@@ -1,0 +1,20 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+    name:
+         label: Name
+         type: text
+         span: auto
+    bio: 
+        label: Bio
+        type: text
+        span: auto
+    date_of_birth:
+                  label: Date of birth
+                  type: datepicker
+                  span: auto

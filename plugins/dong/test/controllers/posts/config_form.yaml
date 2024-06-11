@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Post
+
+# Model Form Field configuration
+form: $/dong/test/models/post/fields.yaml
+
+# Model Class name
+modelClass: Dong\Test\Models\Post
+
+# Default redirect location
+defaultRedirect: dong/test/posts
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: dong/test/posts/update/:id
+    redirectClose: dong/test/posts
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: dong/test/posts
+    redirectClose: dong/test/posts
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

@@ -1,0 +1,19 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    name:
+         label: Name
+         type: text
+         searchable: true
+    bio:
+         label: Bio
+         type: text
+    date_of_birth:
+                  label: Date of birth
+                  type: datetime
+                  span: auto

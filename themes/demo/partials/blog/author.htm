@@ -1,0 +1,9 @@
+<div class="blog-posts">
+    {% for post in authors %}
+        <div class="blog-post">
+            <h2>{{ post.name }}</h2>
+            <p>{{ post.bio }}</p>
+            <p><small>Registered on {{ post.created_at | date('M d, Y') }}</small></p>
+        </div>
+    {% endfor %}
+</div>

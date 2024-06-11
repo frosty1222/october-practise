@@ -1,0 +1,8 @@
+messages:
+    label: Messages belong to current post
+    view:
+        list: $/dong/test/models/message/columns.yaml
+        toolbarButtons: create|delete
+        recordsPerPage: 10
+    manage:
+        form: $/dong/test/models/message/fields.yaml
