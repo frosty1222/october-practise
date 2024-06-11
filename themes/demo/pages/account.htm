@@ -1,0 +1,14 @@
+title = "Account"
+url = "/account"
+layout = "default"
+
+[session]
+security = "user"
+[account]
+redirect = "/account"
+==
+<div class="container">
+    <h2>My Account</h2>
+    <p>Welcome, {{ user.name }}</p>
+    <a data-request="onLogout" data-request-data="redirect: '/good-bye'" class="btn btn-primary">Logout</a>
+</div>

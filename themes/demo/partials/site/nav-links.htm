@@ -16,6 +16,9 @@
     <a class="nav-link {{ activeNavLink == 'contact' ? 'active' }}" href="{{ 'contact'|page }}">Contact</a>
 </li>
 <li class="nav-item">
+   <a class="nav-link {{ activeNavLink == 'contact' ? 'active' }}"  data-request="onLogout" data-request-data="{ redirect: '/good-bye' }">Sign out</a>
+</li>
+<li class="nav-item">
     <a class="nav-link {{ activeNavLink == 'components' ? 'active' }}" href="{{ 'components'|page }}">Components Demo</a>
 </li>
 {% if sitePicker.isEnabled %}

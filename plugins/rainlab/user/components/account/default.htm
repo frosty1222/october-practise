@@ -1,0 +1,36 @@
+title = "Account"
+url = "/account/:code?"
+
+[account]
+isDefault = 1
+==
+...
+<form
+    method="post"
+    class="account-editor"
+    data-request="onUpdateProfile"
+    data-request-flash>
+
+    <input
+        name="first_name"
+        type="text"
+        value="{{ user.first_name }}"
+        class="form-control"
+        placeholder="First name"
+    />
+
+    <input
+        name="last_name"
+        type="text"
+        value="{{ user.last_name }}"
+        class="form-control"
+        placeholder="Last name"
+    />
+
+    <button
+        class="btn btn-primary"
+        data-attach-loading
+        type="submit">
+        Save
+    </button>
+</form>
