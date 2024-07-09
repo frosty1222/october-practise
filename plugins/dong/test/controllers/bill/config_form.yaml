@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Bill
+
+# Model Form Field configuration
+form: $/dong/test/models/bill/fields.yaml
+
+# Model Class name
+modelClass: Dong\Test\Models\Bill
+
+# Default redirect location
+defaultRedirect: dong/test/bill
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: dong/test/bill/update/:id
+    redirectClose: dong/test/bill
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: dong/test/bill
+    redirectClose: dong/test/bill
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

@@ -25,8 +25,17 @@ class Author extends Model
 
     public $hasMany = [
         'posts' => 'Dong\Test\Models\Post',
+        'books' => Book::class
     ];
 
+    public $belongsToMany = [
+        'bills' => [
+            'dong\test\Models\Bill',
+            'table'    => 'dong_test_author_bill',
+            'key'      => 'author_id',
+            'otherKey' => 'bill_id'
+        ]
+    ];
     protected $fillable = [
         'name',
         'bio',

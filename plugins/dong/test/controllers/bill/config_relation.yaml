@@ -1,0 +1,8 @@
+authors:
+    label: Author
+    view:
+        list: $/dong/test/models/author/columns.yaml
+    manage:
+        list: $/dong/test/models/author/columns.yaml
+    pivot:
+        form: $/dong/test/models/author/pivot_field.yaml

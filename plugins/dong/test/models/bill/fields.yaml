@@ -1,0 +1,27 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Name
+        type: text
+        span: auto
+    price:
+         label: Price
+         type: number
+         span: auto
+    quantity:
+         label: Quantity
+         type: number
+         span: auto
+    authors:
+            label: Authors
+            type: relation
+            select: name
+            nameFrom: name  # Display the author's name
+            multiple: true  # Allow multiple authors to be selected
+            pivot:
+                tab: Authors  # Optional: If you want to group pivot fields
+                key: author_id  # Replace with your pivot field name if necessary
+

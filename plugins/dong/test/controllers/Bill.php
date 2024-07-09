@@ -4,11 +4,11 @@ use BackendMenu;
 use Backend\Classes\Controller;
 
 /**
- * Authors Backend Controller
+ * Bill Backend Controller
  *
  * @link https://docs.octobercms.com/3.x/extend/system/controllers.html
  */
-class Authors extends Controller
+class Bill extends Controller
 {
     public $implement = [
         \Backend\Behaviors\FormController::class,
@@ -30,7 +30,7 @@ class Authors extends Controller
     /**
      * @var array required permissions
      */
-    public $requiredPermissions = ['dong.test.authors'];
+    public $requiredPermissions = ['dong.test.bill'];
 
     /**
      * __construct the controller
@@ -39,6 +39,6 @@ class Authors extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Dong.Test', 'test', 'authors');
+        BackendMenu::setContext('Dong.Test', 'test', 'bill');
     }
 }

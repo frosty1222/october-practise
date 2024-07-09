@@ -1,0 +1,16 @@
+books:
+    label: Book
+    manage:
+        form: $/dong/test/models/book/fields.yaml
+        list: $/dong/test/models/book/columns.yaml
+    view:
+        list: $/dong/test/models/book/columns.yaml
+        toolbarButtons: create|delete
+bills:
+    label: Bills
+    view:
+        list: $/dong/test/models/bill/columns.yaml
+    manage:
+        list: $/dong/test/models/bill/columns.yaml
+    pivot:
+        form: $/dong/test/models/bill/fields.yaml

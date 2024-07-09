@@ -1,5 +1,5 @@
 messages:
-    label: Messages belong to current post
+    label: "message"
     view:
         list: $/dong/test/models/message/columns.yaml
         toolbarButtons: create|delete

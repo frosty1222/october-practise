@@ -4,16 +4,15 @@ use BackendMenu;
 use Backend\Classes\Controller;
 
 /**
- * Authors Backend Controller
+ * Book Backend Controller
  *
  * @link https://docs.octobercms.com/3.x/extend/system/controllers.html
  */
-class Authors extends Controller
+class Book extends Controller
 {
     public $implement = [
         \Backend\Behaviors\FormController::class,
         \Backend\Behaviors\ListController::class,
-        \Backend\Behaviors\RelationController::class
     ];
 
     /**
@@ -25,12 +24,11 @@ class Authors extends Controller
      * @var string listConfig file
      */
     public $listConfig = 'config_list.yaml';
-    public $relationConfig = 'config_relation.yaml';
 
     /**
      * @var array required permissions
      */
-    public $requiredPermissions = ['dong.test.authors'];
+    public $requiredPermissions = ['dong.test.book'];
 
     /**
      * __construct the controller
@@ -39,6 +37,6 @@ class Authors extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Dong.Test', 'test', 'authors');
+        BackendMenu::setContext('Dong.Test', 'test', 'book');
     }
 }

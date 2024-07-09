@@ -89,6 +89,20 @@ class Plugin extends PluginBase
                             'permissions' => ['acme.blog.manage_authors'],
                             'order'       => 200,
                         ],
+                        'book' => [
+                            'label'       => 'Books',
+                            'url'         => Backend::url('dong/test/book'),
+                            'icon'        => 'icon-book',
+                            'permissions' => ['acme.blog.manage_books'],
+                            'order'       => 200,
+                        ],
+                        'bills' => [
+                            'label'       => 'Bills',
+                            'url'         => Backend::url('dong/test/bill'),
+                            'icon'        => 'icon-pencil',
+                            'permissions' => ['acme.blog.manage_bills'],
+                            'order'       => 200,
+                        ],
                     ],
             ],
         ];

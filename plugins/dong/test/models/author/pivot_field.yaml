@@ -5,7 +5,7 @@
 fields:
     id:
         label: ID
-        disabled: true
+        type: checkbox
     name:
          label: Name
          type: text
@@ -18,8 +18,3 @@ fields:
                   label: Date of birth
                   type: datepicker
                   span: auto
-    books:
-        label: Books
-        type: partial
-        path: books
-        tab: Books

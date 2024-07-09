@@ -1,0 +1,18 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: Name
+        searchable: true
+    price:
+         label: Price
+         searchable: true
+    quantity:
+         label: Quantity
+         searchable: true
+    authors:
+            label: Authors
+            relation: authors
+            select: name

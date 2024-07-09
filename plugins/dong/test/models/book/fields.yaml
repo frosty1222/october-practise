@@ -1,0 +1,17 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Name
+        type: text
+    price:
+         label: Price
+         type: number
+    type:
+         label: Type
+         type: text
+    author:
+            type: relation
+            nameFrom: name
